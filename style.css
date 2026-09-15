@@ -1,0 +1,116 @@
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .artist-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .artist-banner {
+    background: linear-gradient(transparent, rgba(0,0,0,0.9)), url('https://i.scdn.co/image/ab676186000010169151da1661ce54255a832078') center/cover;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .verified {
+    color: #3d91ff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .artist-info h1 {
+    font-size: 48px;
+    margin: 5px 0;
+  }
+  
+  .discography h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #282828;
+    padding-bottom: 10px;
+  }
+  
+  .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+  }
+  
+  .album-card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .album-card:hover {
+    background-color: #282828;
+  }
+  
+  .cover-wrapper {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .cover-wrapper img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  }
+  
+  .play-btn {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  .album-card:hover .play-btn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .album-card h3 {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .album-card p {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin: 0;
+  }
+
+  
+
+  
